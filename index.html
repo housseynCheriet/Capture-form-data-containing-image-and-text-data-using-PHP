@@ -1,0 +1,63 @@
+<html><head>
+    <title>Membership Form</title>
+    <style type="text/css">
+    	div *,body * {
+    padding: 3px;
+    font-size: 30px;
+}</style>
+  </head>
+  <body style="
+    font-size: 30px;
+">
+    Membership Form
+    <p>To register, please fill in your details below and click Send Details.</p>
+
+    <form enctype="multipart/form-data" action="post-method.php" method="post">
+      <div style="width: 30em;">
+        <label for="firstName">First name</label>
+        <input type="text" name="firstName" id="firstName" value="">
+ </br>
+        <label for="lastName">Last name</label>
+        <input type="text" name="lastName" id="lastName" value="">
+  </br>
+     <input type ="file" name ="avatar" accept="image/png, image/jpeg" style="width:100%;height:45px">
+          </br>
+        <label for="genderMale">Are you male...</label>
+        <input type="radio" name="gender" id="genderMale" value="M" style="
+    height: 30px;
+    width: 30px;
+">
+        <label for="genderFemale">...or female?</label>
+        <input type="radio" name="gender" id="genderFemale" value="F" style="
+    height: 30px;
+    width: 30px;
+">
+ </br>
+        <label for="favoriteWidget">What's your favorite widget?</label>
+        <select name="favoriteWidget" id="favoriteWidget" size="1" style="
+    width: 100%;
+    height: 30px;
+    font-size: 22px;
+">
+          <option value="superWidget">The SuperWidget</option>
+          <option value="megaWidget">The MegaWidget</option>
+          <option value="wonderWidget">The WonderWidget</option>
+        </select>
+
+        <label for="newsletter">Do you want to receive our newsletter?</label>
+        <input type="checkbox" name="newsletter" id="newsletter" value="yes" style="
+    height: 30px;
+    width: 30px;
+">
+
+        <label for="comments">Any comments?</label>
+        <textarea name="comments" id="comments" rows="4" cols="50"> </textarea>
+        <div style="clear: both;">
+          <input type="submit" name="submitButton" id="submitButton" value="Send Details">
+          <input type="reset" name="resetButton" id="resetButton" value="Reset Form" style="margin-right: 20px;">
+        </div>
+      </div>
+    </form>
+
+  
+</body></html>
