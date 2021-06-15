@@ -70,4 +70,8 @@ $srcImg=upload_img('avatar',"./img/","36566845");
       <dt>Comments:</dt><dd><?php echo $_POST["comments"]?></dd>
     </dl>
   </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 3df1e7e52074c9aed6f2bcf3eb8b96ba0dcefa1c
